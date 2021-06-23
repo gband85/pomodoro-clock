@@ -55,3 +55,34 @@ function startTimer() {
   interval = setInterval(timer, 1000);
 
 }
+
+function timer() {
+
+  timeLeft = endTime
+
+  minutes = Math.floor(endTime / 1000 / 60);
+
+  seconds = endTime / 1000 % 60;
+  updateDisplay(minutes, seconds)
+
+  endTime = endTime - 1000;
+  if (endTime < 0) {
+    clearInterval(interval)
+
+
+    alarm.play();
+    if (isSession) {
+
+      endTime = breakLength * 60 * 1000
+
+    } else {
+
+      endTime = sessionLength * 60 * 1000
+
+    }
+
+    startTimer()
+    isSession = !isSession
+  }
+
+}
