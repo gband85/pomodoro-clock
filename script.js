@@ -23,28 +23,46 @@ const timer_label = document.querySelector("#timer-label");
 const alarm = document.getElementById("beep");
 
 start_stop.addEventListener("click", function () {
+  if (timerRunning) {
+    start_stop.innerHTML = "<i class='fas fa-play'></i>";
+    clearInterval(interval);
 
+    timerRunning = false;
+
+  } else {
+
+    timer();
+    startTimer();
+  }
 });
 
 
 break_increment.addEventListener("click", function () {
-
+  let type = "break";
+  let action = "increment";
+  changeLength(type, action);
 });
 
 break_decrement.addEventListener("click", function () {
-
+  let type = "break";
+  let action = "decrement";
+  changeLength(type, action);
 });
 
 session_increment.addEventListener("click", function () {
-
+  let type = "session";
+  let action = "increment";
+  changeLength(type, action);
 });
 
 session_decrement.addEventListener("click", function () {
-
+  let type = "session";
+  let action = "decrement";
+  changeLength(type, action);
 });
 
 reset.addEventListener("click", function () {
-
+  initializeTimers();
 });
 
 function startTimer() {
