@@ -194,3 +194,9 @@ function changeLength(type, action) {
 
   }
 }
+
+window.onload = function () {
+
+  initializeTimers();
+
+};
