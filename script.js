@@ -1,0 +1,11 @@
+var interval;
+var timeout;
+var sessionLength;
+var breakLength;
+var timeLeft;
+var isSession;
+var timerRunning;
+var endTime;
+var msLeft;
+var minutes;
+var seconds;
