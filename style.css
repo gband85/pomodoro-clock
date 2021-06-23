@@ -1,0 +1,112 @@
+body {
+  background-image: url("download.jfif");
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* margin-right: auto; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 800px;
+}
+.btn-group {
+    display: flex;
+    /* height: 30px; */
+    flex-direction: column;
+    align-items: center;
+  }
+  .btkn {
+    width: 60px;
+    height: 60px;
+  }
+#time-left {
+  
+}
+#time-left-wrap {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  align-content: center;
+}
+#clock {
+    
+    width: 200px;
+    colohr: white;
+    display: flex;
+    font-size: 32px;
+    flex-direction: column;
+   
+  }
+  #row {
+    z-index: 11;
+  }
+  #controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+
+  }
+  #controls .btn {
+width: 50px;
+height: 30px;
+margin: 20px;
+  }
+  #cliear {
+    width: 120px;
+    height: 60px;
+  }
+#equals {
+  height: 120px;
+  width: 60px;
+  background-color: turquoise;
+}
+.btn-widje {
+  width: 120px;
+}
+#plus_minus {
+  width: 100px;
+  height: 160px;
+}
+.column .btn {
+  width: 30px;
+  height: 30px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+ width: 400px;
+background-color: rgba(255, 255, 255, 0.5);  
+backdrop-filter: blur(5px);  
+
+
+}
+#timer-label {
+  margin-top: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 40px;
+}
+#display {
+  /* border: 2px solid black; */
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+#length {
+  display: flex;
+  /* margin-top: 0px; */
+}
