@@ -113,3 +113,22 @@ function initializeTimers() {
   timer_label.innerHTML = "Session"
 
 }
+
+function updateDisplay(minutesToDisplay, secondsToDisplay) {
+  if (minutesToDisplay < 10) {
+    minutesToDisplay = "0" + minutesToDisplay
+  }
+  if (secondsToDisplay < 10) {
+    secondsToDisplay = "0" + secondsToDisplay
+  }
+
+  if (isSession) {
+    timer_label.innerHTML = "Session"
+
+  } else {
+    timer_label.innerHTML = "Break"
+
+  }
+
+  time_left.innerHTML = minutesToDisplay + ":" + secondsToDisplay;
+}
