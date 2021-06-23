@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- <div id="everything"> -->
+        <h1>25 + 5 Clock</h1>
+         <div id="length">
+        <div class="column" id="break">
+        <h3 id="break-label">break length</h3>
+       
+       
+            <div class="btn-group">
+<button class="btn" id="break-increment"><i class="fas fa-plus"></i></button>
+        
+        <h3 id="break-length"></h3>
+        <button class="btn" id="break-decrement"><i class="fas fa-minus"></i></button>
+
+        </div>
+    </div>
+
+         <div class="column" id="session"> 
+         <h3 id="session-label">session length</h3>
+         <div class="btn-group">
+        <button class="btn" id="session-increment"><i class="fas fa-plus"></i></button>
+        
+        <h3 id="session-length"></h3>
+        <button class="btn" id="session-decrement"><i class="fas fa-minus"></i></button>
+        
+        </div>
+        </div>
+        </div>
+
+<div id="clock">
+    <div id="display">
+
+            <h3 id="timer-label"></h3>
+            <div id="time-left-wrap">
+                <h3 id="time-left"></h3>
+            </div>
+        </div>
+            <div id="controls">
+                <button class="btn" id="start_stop"></button>
+        
+        <button class="btn" id="reset"><i class="fas fa-sync-alt"></i></button>
+            </div>
+           
+        </div>
+         <audio id="beep">
+                <source src="alarm.mp3" type="audio/mpeg">
+            </audio>
+        <!-- </div> -->
+    </div>
+        <script src="https://kit.fontawesome.com/e7fc420814.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!-- <script src="bundle.js"></script> -->
+</body>
+</html>
