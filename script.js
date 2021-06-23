@@ -132,3 +132,65 @@ function updateDisplay(minutesToDisplay, secondsToDisplay) {
 
   time_left.innerHTML = minutesToDisplay + ":" + secondsToDisplay;
 }
+
+function changeLength(type, action) {
+  if (timerRunning) {
+
+  } else {
+
+    timerRunning = false
+    if (type === "session") {
+      if (action === "increment") {
+        if (sessionLength >= 60) {
+          return
+        }
+        sessionLength += 1
+        session_length.innerHTML = sessionLength;
+
+        endTime = sessionLength * 60 * 1000
+        if (sessionLength < 10)
+
+          time_left.innerHTML = "0" + sessionLength + ":00"
+        else
+          time_left.innerHTML = sessionLength + ":00"
+      }
+      if (action === "decrement") {
+        if (sessionLength <= 1) {
+
+          return;
+        }
+
+        sessionLength -= 1
+
+        session_length.innerHTML = sessionLength;
+
+        endTime = sessionLength * 60 * 1000
+
+        if (sessionLength < 10)
+
+          time_left.innerHTML = "0" + sessionLength + ":00"
+        else
+          time_left.innerHTML = sessionLength + ":00"
+      }
+    }
+    if (type === "break") {
+      if (action === "increment") {
+        if (breakLength >= 60) {
+          return;
+        }
+        breakLength += 1
+        break_length.innerHTML = breakLength;
+
+      }
+      if (action === "decrement") {
+        if (breakLength <= 1) {
+          return
+        }
+        breakLength -= 1
+        break_length.innerHTML = breakLength;
+
+      }
+    }
+
+  }
+}
