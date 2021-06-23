@@ -86,3 +86,30 @@ function timer() {
   }
 
 }
+
+function initializeTimers() {
+
+  alarm.load()
+  clearTimeout(timeout)
+  clearInterval(interval)
+
+  isSession = true
+
+  timerRunning = false
+
+  sessionLength = 25
+  breakLength = 5
+
+  endTime = sessionLength * 60 * 1000
+  minutes = Math.floor(endTime / 1000 / 60);
+
+  seconds = endTime / 1000 % 60
+  updateDisplay(minutes, seconds)
+
+  break_length.innerHTML = breakLength
+  session_length.innerHTML = sessionLength
+  start_stop.innerHTML = "<i class='fas fa-play'></i>"
+
+  timer_label.innerHTML = "Session"
+
+}
