@@ -21,3 +21,28 @@ const break_length = document.querySelector("#break-length");
 const session_length = document.querySelector("#session-length");
 const timer_label = document.querySelector("#timer-label");
 const alarm = document.getElementById("beep");
+
+start_stop.addEventListener("click", function () {
+
+});
+
+
+break_increment.addEventListener("click", function () {
+
+});
+
+break_decrement.addEventListener("click", function () {
+
+});
+
+session_increment.addEventListener("click", function () {
+
+});
+
+session_decrement.addEventListener("click", function () {
+
+});
+
+reset.addEventListener("click", function () {
+
+});
