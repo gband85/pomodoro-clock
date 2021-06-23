@@ -46,3 +46,12 @@ session_decrement.addEventListener("click", function () {
 reset.addEventListener("click", function () {
 
 });
+
+function startTimer() {
+
+  start_stop.innerHTML = "<i class='fas fa-pause'></i>"
+  timerRunning = true
+
+  interval = setInterval(timer, 1000);
+
+}
